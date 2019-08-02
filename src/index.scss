@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "Dominion";
+  src: url("./fonts/dominion.eot");
+  src: url("./fonts/dominion.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/dominion.woff") format("woff"),
+    url("./fonts/dominion.ttf") format("truetype"),
+    url("./fonts/dominion.svg#dominion") format("svg");
+  /* url('./fonts/dominion.woff2') format('woff2'), */
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.icon {
+  font-family: "Dominion";
+}

@@ -1,0 +1,136 @@
+$color--Base: #b8a27d;
+$color--Intrigue: #9e9e9e;
+$color--Seaside: #84c4e0;
+$color--Alchemy: #816399;
+$color--Prosperity: #cde01d;
+$color--Cornucopia: #f2a138;
+$color--Hinterlands: #8eb365;
+$color--Dark-Ages: #804020;
+$color--Guilds: #f59dc0;
+$color--Adventures: #7e7e7e;
+$color--Empires: #daa520;
+$color--Nocturne: #3a47c0;
+$color--Renaissance: #31aebc;
+
+.Icon {
+  font-family: "Dominion";
+  font-size: 2rem;
+  padding: 10px;
+
+  &--Base {
+    &::before {
+      content: "\e900";
+    }
+    &:hover::before {
+      color: $color--Base;
+    }
+  }
+
+  &--Intrigue {
+    &::before {
+      content: "\e901";
+    }
+    &:hover::before {
+      color: $color--Intrigue;
+    }
+  }
+
+  &--Seaside {
+    &::before {
+      content: "\e902";
+    }
+    &:hover::before {
+      color: $color--Seaside;
+    }
+  }
+
+  &--Alchemy {
+    &::before {
+      content: "\e903";
+    }
+    &:hover::before {
+      color: $color--Alchemy;
+    }
+  }
+
+  &--Prosperity {
+    &::before {
+      content: "\e904";
+    }
+    &:hover::before {
+      color: $color--Prosperity;
+    }
+  }
+
+  &--Cornucopia {
+    &::before {
+      content: "\e905";
+    }
+    &:hover::before {
+      color: $color--Cornucopia;
+    }
+  }
+
+  &--Hinterlands {
+    &::before {
+      content: "\e906";
+    }
+    &:hover::before {
+      color: $color--Hinterlands;
+    }
+  }
+
+  &--Dark-Ages {
+    &::before {
+      content: "\e907";
+    }
+    &:hover::before {
+      color: $color--Dark-Ages;
+    }
+  }
+
+  &--Guilds {
+    &::before {
+      content: "\e908";
+    }
+    &:hover::before {
+      color: $color--Guilds;
+    }
+  }
+
+  &--Adventures {
+    &::before {
+      content: "\e909";
+    }
+    &:hover::before {
+      color: $color--Adventures;
+    }
+  }
+
+  &--Empires {
+    &::before {
+      content: "\e90a";
+    }
+    &:hover::before {
+      color: $color--Empires;
+    }
+  }
+
+  &--Nocturne {
+    &::before {
+      content: "\e90b";
+    }
+    &:hover::before {
+      color: $color--Nocturne;
+    }
+  }
+
+  &--Renaissance {
+    &::before {
+      content: "\e90c";
+    }
+    &:hover::before {
+      color: $color--Renaissance;
+    }
+  }
+}
