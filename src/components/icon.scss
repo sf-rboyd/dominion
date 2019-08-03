@@ -15,13 +15,13 @@ $color--Renaissance: #31aebc;
 .Icon {
   font-family: "Dominion";
   font-size: 2rem;
-  padding: 10px;
+  cursor: pointer;
 
   &--Base {
     &::before {
       content: "\e900";
     }
-    &:hover::before {
+    &--toggled {
       color: $color--Base;
     }
   }
@@ -30,7 +30,7 @@ $color--Renaissance: #31aebc;
     &::before {
       content: "\e901";
     }
-    &:hover::before {
+    &--toggled {
       color: $color--Intrigue;
     }
   }
@@ -39,7 +39,7 @@ $color--Renaissance: #31aebc;
     &::before {
       content: "\e902";
     }
-    &:hover::before {
+    &--toggled {
       color: $color--Seaside;
     }
   }
@@ -48,7 +48,7 @@ $color--Renaissance: #31aebc;
     &::before {
       content: "\e903";
     }
-    &:hover::before {
+    &--toggled {
       color: $color--Alchemy;
     }
   }
@@ -57,7 +57,7 @@ $color--Renaissance: #31aebc;
     &::before {
       content: "\e904";
     }
-    &:hover::before {
+    &--toggled {
       color: $color--Prosperity;
     }
   }
@@ -66,7 +66,7 @@ $color--Renaissance: #31aebc;
     &::before {
       content: "\e905";
     }
-    &:hover::before {
+    &--toggled {
       color: $color--Cornucopia;
     }
   }
@@ -75,7 +75,7 @@ $color--Renaissance: #31aebc;
     &::before {
       content: "\e906";
     }
-    &:hover::before {
+    &--toggled {
       color: $color--Hinterlands;
     }
   }
@@ -84,7 +84,7 @@ $color--Renaissance: #31aebc;
     &::before {
       content: "\e907";
     }
-    &:hover::before {
+    &--toggled {
       color: $color--Dark-Ages;
     }
   }
@@ -93,7 +93,7 @@ $color--Renaissance: #31aebc;
     &::before {
       content: "\e908";
     }
-    &:hover::before {
+    &--toggled {
       color: $color--Guilds;
     }
   }
@@ -102,7 +102,7 @@ $color--Renaissance: #31aebc;
     &::before {
       content: "\e909";
     }
-    &:hover::before {
+    &--toggled {
       color: $color--Adventures;
     }
   }
@@ -111,7 +111,7 @@ $color--Renaissance: #31aebc;
     &::before {
       content: "\e90a";
     }
-    &:hover::before {
+    &--toggled {
       color: $color--Empires;
     }
   }
@@ -120,7 +120,7 @@ $color--Renaissance: #31aebc;
     &::before {
       content: "\e90b";
     }
-    &:hover::before {
+    &--toggled {
       color: $color--Nocturne;
     }
   }
@@ -129,7 +129,7 @@ $color--Renaissance: #31aebc;
     &::before {
       content: "\e90c";
     }
-    &:hover::before {
+    &--toggled {
       color: $color--Renaissance;
     }
   }
