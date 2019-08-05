@@ -31,7 +31,7 @@ class IconList extends Component {
 
   render() {
     return (
-      <ul className="IconList">
+      <ul className="CardList">
         {this.state.icons.map(icon => (
           <Icon key={icon.name} icon={icon} onToggle={this.handleToggle} />
         ))}

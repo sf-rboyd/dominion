@@ -1,0 +1,18 @@
+$breakpoint-mobile: 768px;
+
+.Card {
+  max-height: 50px;
+
+  @media (min-width: $breakpoint-mobile) {
+    max-height: 473px;
+    display: inline-block;
+  }
+
+  &__image {
+    width: 296px;
+
+    @media (min-width: $breakpoint-mobile) {
+      width: 100px;
+    }
+  }
+}

@@ -1,9 +1,18 @@
 import React from "react";
+import "./card.scss";
 
-const Card = props => {
-  const source = "/assets/images/cards/Base/Adventurer.jpg";
+const Card = ({ card }) => {
+  const source = "/" + card.expansion + "/" + card.name + ".jpg";
 
-  return <img src={process.env.PUBLIC_URL + source} alt="adventurer" />;
+  return (
+    <li className="Card">
+      <img
+        className="Card__image"
+        src={process.env.PUBLIC_URL + "/assets/images/cards" + source}
+        alt={card.name}
+      />
+    </li>
+  );
 };
 
 export default Card;
