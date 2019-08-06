@@ -4,8 +4,8 @@ $breakpoint-mobile: 768px;
   max-height: 50px;
 
   @media (min-width: $breakpoint-mobile) {
-    max-height: 473px;
     display: inline-block;
+    max-height: 473px;
   }
 
   &__image {

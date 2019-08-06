@@ -1,0 +1,54 @@
+[
+  {
+    "name": "Base",
+    "color": "#b8a27d"
+  },
+  {
+    "name": "Intrigue",
+    "color": "#9e9e9e"
+  },
+  {
+    "name": "Seaside",
+    "color": "#84c4e0"
+  },
+  {
+    "name": "Alchemy",
+    "color": "#816399"
+  },
+  {
+    "name": "Prosperity",
+    "color": "#cde01d"
+  },
+  {
+    "name": "Cornucopia",
+    "color": "#f2a138"
+  },
+  {
+    "name": "Hinterlands",
+    "color": "#8eb365"
+  },
+  {
+    "name": "Dark-Ages",
+    "color": "#804020"
+  },
+  {
+    "name": "Guilds",
+    "color": "#f59dc0"
+  },
+  {
+    "name": "Adventures",
+    "color": "#7e7e7e"
+  },
+  {
+    "name": "Empires",
+    "color": "#daa520"
+  },
+  {
+    "name": "Nocturne",
+    "color": "#3a47c0"
+  },
+  {
+    "name": "Renaissance",
+    "color": "#31aebc"
+  }
+]

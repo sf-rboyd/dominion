@@ -1,23 +1,15 @@
-import React, { Component } from "react";
+import React from "react";
 import Card from "./card";
-import cards from "../data/cards.json";
 import "./cardlist.scss";
 
-class CardList extends Component {
-  constructor() {
-    super();
-    this.state = { cards: cards.slice(0, 10) }; // Gets first 10 cards
-  }
-
-  render() {
-    return (
-      <ul className="CardList">
-        {this.state.cards.map(card => (
-          <Card key={card.name} card={card} />
-        ))}
-      </ul>
-    );
-  }
-}
+const CardList = ({ cards }) => {
+  return (
+    <div className="CardList">
+      {cards.map(card => (
+        <Card key={card.name} card={card} />
+      ))}
+    </div>
+  );
+};
 
 export default CardList;

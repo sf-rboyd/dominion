@@ -5,13 +5,13 @@ const Card = ({ card }) => {
   const source = "/" + card.expansion + "/" + card.name + ".jpg";
 
   return (
-    <li className="Card">
+    <div className="Card">
       <img
         className="Card__image"
         src={process.env.PUBLIC_URL + "/assets/images/cards" + source}
         alt={card.name}
       />
-    </li>
+    </div>
   );
 };
 

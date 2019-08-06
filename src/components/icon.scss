@@ -16,6 +16,7 @@ $color--Renaissance: #31aebc;
   font-family: "Dominion";
   font-size: 2rem;
   cursor: pointer;
+  display: inline-block;
 
   &--Base {
     &::before {
