@@ -9,13 +9,17 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      cards: cardRepository.slice(0, 10),
+      cards: [],
       icons: expansionRepository.map(expansion => ({
         name: expansion.name,
         color: expansion.color,
         isToggled: expansionRepository.indexOf(expansion) === 0 ? true : false
       }))
     };
+  }
+
+  componentDidMount() {
+    this.handleRandomize();
   }
 
   handleToggle = icon => {
