@@ -2,7 +2,7 @@ import React from "react";
 import "./icon.scss";
 
 const Icon = ({ icon, onToggle }) => {
-  return <li className={getClassNames(icon)} onClick={() => onToggle(icon)} />;
+  return <div className={getClassNames(icon)} onClick={() => onToggle(icon)} />;
 };
 
 export default Icon;

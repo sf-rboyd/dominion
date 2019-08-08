@@ -14,9 +14,10 @@ $color--Renaissance: #31aebc;
 
 .Icon {
   font-family: "Dominion";
-  font-size: 2rem;
+  font-size: 4rem;
   cursor: pointer;
   display: inline-block;
+  margin: 12px;
 
   &--Base {
     &::before {

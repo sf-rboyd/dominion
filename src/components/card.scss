@@ -1,18 +1,29 @@
 $breakpoint-mobile: 768px;
+$width-mobile: 296px;
+$clip-height: 50px;
+$width: 148px;
+$height: 236px;
 
 .Card {
-  max-height: 50px;
-
   @media (min-width: $breakpoint-mobile) {
     display: inline-block;
-    max-height: 473px;
+    width: $width;
+    height: $height;
   }
 
+  width: $width-mobile;
+  height: $clip-height;
+  position: relative;
+
   &__image {
-    width: 296px;
+    width: $width-mobile;
+    position: absolute;
+    clip: rect(0px, $width-mobile, $clip-height, 0px);
 
     @media (min-width: $breakpoint-mobile) {
-      width: 100px;
+      width: $width;
+      height: $height;
+      clip: rect(0px, $width, $height, 0px);
     }
   }
 }

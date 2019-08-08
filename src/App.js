@@ -51,11 +51,24 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <IconList icons={this.state.icons} onToggle={this.handleToggle} />
-        <button className="button" onClick={this.handleRandomize}>
-          Randomize
-        </button>
-        <CardList cards={this.state.cards} />
+        <input type="checkbox" id="App__toggle" className="App__toggle" />
+        <label for="App__toggle" className="App__toggle_label">
+          <span />
+        </label>
+        <main className="App__content">
+          <CardList cards={this.state.cards} />
+          <button className="button" onClick={this.handleRandomize}>
+            Randomize
+          </button>
+        </main>
+        <div className="App__cover" />
+        <div className="App__menu">
+          <label for="App__toggle" className="App__toggle_label--menu">
+            <span />
+          </label>
+          <IconList icons={this.state.icons} onToggle={this.handleToggle} />
+        </div>
+        <footer />
       </div>
     );
   }

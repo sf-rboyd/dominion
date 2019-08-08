@@ -4,11 +4,11 @@ import "./iconlist.scss";
 
 const IconList = ({ icons, onToggle }) => {
   return (
-    <ul className="IconList">
+    <div className="IconList">
       {icons.map(icon => (
         <Icon key={icon.name} icon={icon} onToggle={onToggle} />
       ))}
-    </ul>
+    </div>
   );
 };
 

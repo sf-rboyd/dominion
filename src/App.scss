@@ -1,9 +1,153 @@
 .App {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+.App__content {
+  min-height: 100vh;
+  background-image: url(//unsplash.it/1000/1000);
+  background-color: #555;
+  background-blend-mode: multiply;
+  background-size: cover;
   display: grid;
+  place-items: center;
+  transition: transform 250ms ease-in-out;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  z-index: 1;
+}
+
+.App__cover {
+  background: rgb(0, 0, 0);
+  opacity: 0;
+  transition: opacity 250ms ease-in-out;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+}
+
+.App__toggle {
+  display: none;
+}
+
+.App__toggle_label {
+  color: white;
+  position: absolute;
+  right: 0px;
+  margin-right: 1em;
+  margin-top: 1em;
+  height: 24px;
+  width: 32px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.App__toggle_label span,
+.App__toggle_label span::before,
+.App__toggle_label span::after {
+  display: block;
+  background: white;
+  height: 2px;
+  width: 2em;
+  border-radius: 2px;
+  position: relative;
+}
+
+.App__toggle_label span::before,
+.App__toggle_label span::after {
+  content: "";
+  position: absolute;
+}
+
+.App__toggle_label span::before {
+  bottom: 7px;
+}
+
+.App__toggle_label span::after {
+  top: 7px;
+}
+
+.App__toggle_label--menu {
+  color: black;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  margin-right: 1em;
+  margin-top: 1em;
+  height: 24px;
+  width: 32px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+.App__toggle_label--menu span,
+.App__toggle_label--menu span::before,
+.App__toggle_label--menu span::after {
+  display: block;
+  background: white;
+  height: 2px;
+  width: 2em;
+  border-radius: 2px;
+  position: relative;
+}
+
+.App__toggle_label--menu span::before,
+.App__toggle_label--menu span::after {
+  content: "";
+  position: absolute;
+  background: black;
+}
+
+.App__toggle_label--menu span::before {
+  transform: rotate(45deg);
+}
+
+.App__toggle_label--menu span::after {
+  transform: rotate(-45deg);
+}
+
+.App__toggle:checked ~ main {
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+  transform: scale(1.01);
+  pointer-events: none;
+}
+
+.App__toggle:checked ~ .App__cover {
+  opacity: 0.6;
+}
+
+.App__toggle:checked ~ .App__menu {
+  transform: translateX(0px);
+}
+
+.App__menu {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 400px;
+  background: white;
+  transform: translateX(400px);
+  transition: transform 250ms ease-out;
+  display: grid;
+  place-items: center;
+  z-index: 999;
 }
 
 .button {
   padding: 1em 2em;
-  font-size: 30px;
-  justify-self: center;
+  font-size: 20px;
+  background: red;
+  color: white;
+  border: 1px solid white;
+  border-radius: 12px;
+  cursor: pointer;
 }

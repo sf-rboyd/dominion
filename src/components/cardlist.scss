@@ -1,13 +1,13 @@
 $breakpoint-mobile: 768px;
+$card-width: 150px;
 
 .CardList {
   margin: 0;
   padding: 0;
-  justify-self: center;
 
   @media (min-width: $breakpoint-mobile) {
     display: grid;
-    grid-template-columns: 100px 100px 100px 100px 100px;
+    grid-template-columns: repeat(5, $card-width);
     grid-template-rows: auto auto;
   }
 }
